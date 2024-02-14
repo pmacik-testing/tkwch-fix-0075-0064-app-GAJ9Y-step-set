@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ijme
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0064-tenant/tkwch-fix-0075-0064-app/devfile-sample-ijme@sha256:9847c6c0efc77b99c2cd04719041945818ef139c1763bd97790150181e464015
+        name: my-nodejs
+        resources: {}
+status: {}
